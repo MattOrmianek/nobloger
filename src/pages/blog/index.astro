@@ -1,6 +1,6 @@
 ---
-import BaseLayout from "@/layouts/BaseLayout.astro";
 import Post from "@/components/Blog/Post.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 
 const posts = await Astro.glob("@/pages/posts/*.md");
 const pageTitle = "Blog";
@@ -18,7 +18,7 @@ posts.sort(cmp);
 <BaseLayout pageTitle={pageTitle}>
   <div class="flex flex-col gap-4">
     <div class="text-2xl text-stone-700 dark:text-stone-200 mb-8">
-      ▐𝟯 █▄ ⬤ ▐▅▚
+      BLOG
     </div>
     <input
       data-posts={JSON.stringify(posts)}

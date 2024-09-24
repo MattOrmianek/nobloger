@@ -1,10 +1,10 @@
 ---
-import BaseLayout from "@/layouts/BaseLayout.astro";
 import Ztag from "@/components/Blog/Ztag.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 import type {
-  InferGetStaticParamsType,
-  InferGetStaticPropsType,
-  GetStaticPaths,
+GetStaticPaths,
+InferGetStaticParamsType,
+InferGetStaticPropsType,
 } from "astro";
 
 import { formatDate, urlFromBase } from "@/lib/utils";
@@ -36,7 +36,7 @@ const { posts } = Astro.props as Props;
 
 <BaseLayout pageTitle={tag}>
   <div class="text-2xl mb-16 text-stone-700 dark:text-stone-200">
-    ▀█▀ ▅▀▅ ▐▅▚ ▄█▀
+    TAGS
   </div>
   <div class="flex flex-col gap-2">
     <a
